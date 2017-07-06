@@ -11,9 +11,9 @@ import java.io.IOException;
 import java.time.Instant;
 
 @Component
-public class MilisecondsToInstantDeserializer extends JsonDeserializer<Instant> {
+public class MillisecondsToInstantDeserializer extends JsonDeserializer<Instant> {
 
-    private final Logger log = LoggerFactory.getLogger(MilisecondsToInstantDeserializer.class);
+    private final Logger log = LoggerFactory.getLogger(MillisecondsToInstantDeserializer.class);
 
     @Override
     public Instant deserialize(JsonParser jp, DeserializationContext ctxt) throws IOException {

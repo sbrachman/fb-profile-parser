@@ -1,7 +1,7 @@
 package com.soint.app.domain;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.soint.app.json.deserializer.MilisecondsToInstantDeserializer;
+import com.soint.app.json.deserializer.MillisecondsToInstantDeserializer;
 
 import java.time.Instant;
 import java.util.List;
@@ -11,7 +11,7 @@ public class Facebook {
 
     private String id;
 
-    @JsonDeserialize(using = MilisecondsToInstantDeserializer.class)
+    @JsonDeserialize(using = MillisecondsToInstantDeserializer.class)
     private Instant birthday;
     private String firstname;
     private String lastname;
