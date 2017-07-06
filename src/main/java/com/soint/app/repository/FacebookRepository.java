@@ -21,7 +21,7 @@ public class FacebookRepository {
 
     private Map<String, Facebook> fbProfiles;
     private Set<Post> posts;
-    private final String directoryPath = "src/main/java/com/soint/app/json/data";
+    private final String directoryPath = "src/main/resources/data";
     private final String[] allowedExtensions = {"json"};
 
     public Map<String, Facebook> getFbProfiles() {
